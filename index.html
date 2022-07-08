@@ -29,9 +29,9 @@
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="bunker-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="grotto-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
         <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
-        <img id="sechelt" crossorigin="anonymous" src="assets/PANO_20210418_093841_12.jpg">
+        <img id="grotto" crossorigin="anonymous" src="assets/mary_grotto.jpg">
     </a-assets>
 
       <!-- 360-degree image. -->
@@ -43,8 +43,11 @@
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#bunker" data-thumb="#bunker-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#grotto" data-thumb="#grotto-thumb"></a-entity>
       </a-entity>
+
+      <a-entity hand-controls="right"></a-entity>
+      <a-entity laser-controls="hand: right" raycaster="objects: .link; lineColor: red; lineOpacity: 0.5;"></a-entity>
 
       <!-- Camera + cursor. -->
       <a-entity camera look-controls>
