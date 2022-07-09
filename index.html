@@ -25,7 +25,7 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="bunker" src="assets/fixed.jpg">
+        <img id="peter-square" src="assets/peter-square.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="bunker-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
@@ -35,14 +35,14 @@
     </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#bunker"
+      <a-sky id="image-360" radius="10" src="#peter-square"
              animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#bunker" data-thumb="#bunker-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#peter-square" data-thumb="#bunker-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#grotto" data-thumb="#grotto-thumb"></a-entity>
       </a-entity>
 
