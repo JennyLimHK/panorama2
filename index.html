@@ -27,10 +27,10 @@
       <a-assets>
         <img id="peter-square" src="assets/peter-square.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="bunker-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="grotto-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
-        <img id="cubes" crossorigin="anonymous" src="assets/park_evening.jpg">
+        <img id="square-thumb" crossorigin="anonymous" src="assets/square-thumb.jpg">
+        <img id="park-thumb" crossorigin="anonymous" src="assets/park-thumb.jpg">
+        <img id="grotto-thumb" crossorigin="anonymous" src="assets/grotto-thumb.jpg">
+        <img id="park" crossorigin="anonymous" src="assets/park_evening.jpg">
         <img id="grotto" crossorigin="anonymous" src="assets/mary_grotto.jpg">
     </a-assets>
 
@@ -41,8 +41,8 @@
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#peter-square" data-thumb="#bunker-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#park" data-thumb="#park-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#peter-square" data-thumb="#square-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#grotto" data-thumb="#grotto-thumb"></a-entity>
       </a-entity>
 
